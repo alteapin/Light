@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #d36d01;
+}
+
+.container {
+    position: relative;
+   
+}
+
+.her {
+    position: fixed;
+    left: 10%;
+    bottom: 0;
+}
+
+.light {
+    position: absolute;
+}
