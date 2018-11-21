@@ -23,19 +23,19 @@ body {
     left: 45%;
     bottom: 272px;
     position: fixed;
-    animation: light 1s ease-in;
+    animation: light 0.2s ease-in;
     animation-iteration-count: infinite;
 }
 
 @keyframes light {
     from {
-        transform: translateX(1.5%)
+        transform: translateX(0.9%)
         
          
     }
 
     to {
-        transform: translateX(1%)
+        transform: translateX(1.5%)
        
     }
 }
