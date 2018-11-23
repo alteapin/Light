@@ -17,6 +17,8 @@ body {
     position: fixed;
     left: 10%;
     bottom: 0;
+    animation: light 0.2s ease-in;
+
 }
 
 .light {
@@ -39,4 +41,27 @@ body {
        
     }
 }
+
+.smoke {
+    position: fixed;
+    left: 50.5%;
+    animation: smoke 4s ease-in;
+    animation-fill-mode: forwards; 
+    animation-delay: 4s;
+   
+}
+
+@keyframes smoke {
+    from {
+        transform: translateY(0.9%)
+        
+         
+    }
+
+    to {
+        transform: translateY(-100vh)
+       
+    }
+}
+
 }
