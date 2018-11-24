@@ -6,24 +6,56 @@
 
 body {
     background-color: #d36d01;
+    animation: color 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
+    @keyframes color {
+        from {
+            background-color: #d36d01;
+            
+             
+        }
+    
+        to {
+            background-color: black;
+           
+        }
+    }
+
+
 
 .container {
     position: relative;
-   
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .her {
-    position: fixed;
-    left: 10%;
-    bottom: 0;
-    animation: light 0.2s ease-in;
+    visibility: visible;
+    animation: hidden 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes hidden {
+    from {
+        visibility: visible;
+        
+         
+    }
+
+    to {
+       visibility: hidden;
+       
+    }
 }
 
 .light {
-    left: 45%;
-    bottom: 272px;
+    left: 41%;
+    bottom: 240px;
     position: fixed;
     animation: light 0.2s ease-in;
     animation-iteration-count: infinite;
@@ -42,7 +74,34 @@ body {
     }
 }
 
-.smoke {
+.text {
+font-family: 'Roboto', sans-serif;
+    font-size:54px;
+    color:black;
+    text-transform: uppercase;
+    line-height: 16px;
+   position: fixed;
+   bottom: 55%;
+   left: 47%;
+   opacity: 0;
+   animation: intro 2s ease-out; 
+   animation-delay: 4s;
+  
+}
+
+   @keyframes intro {
+
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+/* .smoke {
     position: fixed;
     left: 50.5%;
     animation: smoke 4s ease-in;
@@ -64,4 +123,5 @@ body {
     }
 }
 
+} */
 }
